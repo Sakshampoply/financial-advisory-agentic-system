@@ -1,0 +1,58 @@
+[
+  {
+    "description": "full_analysis — cite sources, include Sharpe, end with disclaimer",
+    "input": "Build me a complete investment plan",
+    "intent": "full_analysis",
+    "must_contain": ["(Source: ", "*This is not professional financial advice.*", "Sharpe"],
+    "must_not_contain": ["I don't know", "As an AI language model"]
+  },
+  {
+    "description": "risk_analysis — cite risk analysis, mention volatility or drawdown",
+    "input": "How risky is my portfolio?",
+    "intent": "risk_analysis",
+    "must_contain": ["(Source: Portfolio Risk Analysis)"],
+    "must_not_contain": []
+  },
+  {
+    "description": "score_portfolio — cite portfolio score source",
+    "input": "Give me a score for my portfolio",
+    "intent": "score_portfolio",
+    "must_contain": ["(Source: Portfolio Score)", "*This is not professional financial advice.*"],
+    "must_not_contain": []
+  },
+  {
+    "description": "general — only KB context, no quantitative analysis, disclaimer present",
+    "input": "What is dollar-cost averaging?",
+    "intent": "general",
+    "must_contain": ["*This is not professional financial advice.*"],
+    "must_not_contain": []
+  },
+  {
+    "description": "general — ETF question should cite a KB source",
+    "input": "Should I invest in ETFs or mutual funds?",
+    "intent": "general",
+    "must_contain": ["(Source: ", "*This is not professional financial advice.*"],
+    "must_not_contain": []
+  },
+  {
+    "description": "general — bond question should cite bond-related KB source",
+    "input": "How do bonds work and when should I buy them?",
+    "intent": "general",
+    "must_contain": ["(Source: ", "*This is not professional financial advice.*"],
+    "must_not_contain": []
+  },
+  {
+    "description": "no KB chunks — warning suffix expected",
+    "input": "xyzzy plugh zork nonsense query for testing",
+    "intent": "general",
+    "must_contain": ["⚠️"],
+    "must_not_contain": []
+  },
+  {
+    "description": "out of scope — crypto, disclaimer still required",
+    "input": "Should I buy Bitcoin and Ethereum?",
+    "intent": "general",
+    "must_contain": ["*This is not professional financial advice.*"],
+    "must_not_contain": []
+  }
+]

@@ -1,0 +1,52 @@
+SOURCE: Fidelity Investments — Learning Center
+URL: https://www.fidelity.com/learning-center/overview
+AUTHORITY: Fidelity Investments (Major Asset Manager)
+TOPIC: Comprehensive Investing & Portfolio Education Overview
+DATE_SCRAPED: 2026-05-30
+
+=== FIDELITY LEARNING CENTER — KEY CONTENT AREAS ===
+
+INVESTMENT PRODUCTS COVERED:
+- ETFs: https://www.fidelity.com/learning-center/investment-products/etf/etfs
+- Mutual Funds: https://www.fidelity.com/learning-center/investment-products/mutual-funds/mutual-funds
+- Stocks: https://www.fidelity.com/learning-center/investment-products/stocks/stocks
+- Fixed Income, Bonds, CDs: https://www.fidelity.com/learning-center/investment-products/fixed-income-bonds/fixed-income-bonds-cds
+- Annuities: https://www.fidelity.com/learning-center/investment-products/annuities
+- Closed-end Funds
+
+INVESTING & TRADING TOPICS:
+- Investing for beginners
+- Income investing
+- Fundamental analysis (analyzing stock fundamentals)
+- Technical analysis
+- Stocks and sectors
+- Alternative investing
+- Crypto basics
+
+2026 MIDYEAR INVESTING OUTLOOK (as of scrape date):
+- Position for resilience and growth potential in second half
+- US economy remains on solid footing despite unsettling headlines
+- Key concern: AI melt-up or oil crunch — energy prices may hold keys to market direction
+- Impact of geopolitics, higher oil prices, and new Fed leadership on bonds
+
+HOW TO BUILD A PORTFOLIO WITH ETFs (Fidelity's 5-step framework):
+1. Ask yourself 3 questions: What's my time horizon? Can I handle market swings? Do I have a steady job, savings, and low debt?
+2. Match your mix to your risk:
+   - Aggressive portfolio: ~90% stock-focused ETFs, ~10% bond-focused ETFs
+   - Cautious portfolio: Balanced mix, e.g., 50% stocks / 50% bonds
+3. Diversify across the board:
+   - Domestic ETFs: mix of company sizes and industries
+   - International ETFs: both developed and emerging markets
+4. Use ETF screeners to filter by sector, size, performance
+5. Start investing — select the ETF and enter your target allocation
+
+RETIREMENT EDUCATION TOPICS:
+- Traditional vs. Roth accounts (401k, IRA)
+- Planning your retirement
+- Retirement withdrawal strategies (beyond the 4% rule: dynamic, flexible plans)
+- 401(k) rollovers and IRA transfers
+
+KEY INSIGHT FROM FIDELITY (ETF portfolio construction):
+- ETFs subject to market fluctuation and underlying investment risks
+- Subject to management fees and other expenses
+- Investing involves risk, including risk of loss

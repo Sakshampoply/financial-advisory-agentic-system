@@ -1,0 +1,44 @@
+SOURCE: SEC Investor Education — investor.gov
+URL: https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-2
+AUTHORITY: U.S. Securities and Exchange Commission (SEC)
+TOPIC: Exchange-Traded Funds (ETFs) — Complete Guide
+DATE_SCRAPED: 2026-05-30
+
+=== EXCHANGE-TRADED FUNDS (ETFs) ===
+
+NOTE: This page discusses only ETFs registered as open-end investment companies or unit investment trusts under the Investment Company Act of 1940. It does not address other exchange-traded products such as exchange-traded commodity trusts or exchange-traded notes.
+
+WHAT ARE ETFs?
+An ETF is an exchange-traded investment product that must register with the SEC as an open-end investment company or a unit investment trust. ETFs pool money from many investors and invest in stocks, bonds, short-term money-market instruments, other securities or assets, or some combination. Each ETF share represents an investor's part ownership of the ETF's portfolio and the income the portfolio generates.
+
+WHY DO PEOPLE BUY ETFs?
+- Professional Management: Most ETFs are typically managed by SEC-registered investment advisers.
+- Diversification: Many ETFs invest in a range of companies and industries, lowering risk. Some ETFs are less diverse or may track a single stock.
+- Low Minimum Investment: ETF shares can often be purchased for relatively low dollar amounts.
+- Liquidity: ETF investors can trade shares on the market at market price whenever the market is open.
+- Tax Advantage: Because many ETFs buy and sell portfolio securities in-kind (rather than for cash), they typically have fewer capital gains distributions and thus lower taxes than mutual funds.
+
+HOW DO INVESTORS EARN MONEY FROM ETFs?
+1. Dividend Payments: Income from portfolio (dividends on stocks, interest on bonds) paid to shareholders less expenses.
+2. Capital Gains Distributions: When a fund sells a security that has increased in price, the fund has a capital gain. At year end, distributes these gains minus losses to investors.
+3. Increased Market Price: If the market value of an ETF's portfolio increases (after deducting expenses), the NAV increases and market price of shares may also increase.
+
+KEY DIFFERENCE FROM MUTUAL FUNDS: ETF investors reinvesting dividends may face more complexity and additional brokerage commissions compared to mutual funds.
+
+RISKS OF ETFs
+Like mutual funds, ETFs are NOT guaranteed or insured by the FDIC. You may lose some or all of your investment. Past performance does not predict future returns but can indicate volatility. Higher potential return generally means higher risk.
+
+BUYING AND SELLING ETFs
+Investors buy and sell ETF shares on national stock exchanges at market prices that may or may not equal the NAV. An ETF's market price may reflect a premium or discount to the ETF's underlying value or NAV. Investors often need a brokerage account to trade shares.
+
+ETF vs. MUTUAL FUND KEY DISTINCTION: ETFs trade on exchanges at market price throughout the day; mutual fund shares are purchased/redeemed at the next calculated NAV (end of day).
+
+TYPES OF ETFs
+- Stock funds: Invest primarily in stocks/equities.
+- Bond/income funds: Invest primarily in bonds or debt securities.
+- Target date funds: Mix of stock, bond, and other funds designed for a particular retirement date.
+- Money market fund ETFs: Invest in liquid, short-term debt securities, cash, and cash equivalents.
+
+INVESTING STRATEGIES
+- Index ETFs (Passive): Designed to achieve approximately the same return as a particular index before fees. Less trading, lower costs, more favorable tax consequences.
+- Actively Managed ETFs: Seek to achieve stated objective by investing in portfolio of stocks, bonds, and other assets. Potential to outperform market but dependent on manager skill.

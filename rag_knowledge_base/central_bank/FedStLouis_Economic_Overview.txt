@@ -1,0 +1,51 @@
+SOURCE: Federal Reserve Bank of St. Louis
+URL: https://www.stlouisfed.org / https://research.stlouisfed.org/publications
+AUTHORITY: Federal Reserve Bank of St. Louis (part of Federal Reserve System)
+TOPIC: Economic Data, Monetary Policy, Financial Research
+DATE_SCRAPED: 2026-05-30
+
+=== FEDERAL RESERVE BANK OF ST. LOUIS — RESEARCH OVERVIEW ===
+
+KEY ECONOMIC INDICATORS (as of May 2026):
+- Unemployment Rate: 4.3% (April 2026)
+- PCE Inflation: 3.77% (April 2026)
+- Daily Federal Funds Rate: 3.62% (May 28, 2026)
+
+ROLE OF THE FEDERAL RESERVE SYSTEM:
+The Federal Reserve (Fed) is the central bank of the United States. The Fed:
+1. Sets monetary policy to promote:
+   - Maximum employment
+   - Stable prices (inflation target ~2%)
+   - Moderate long-term interest rates
+2. Promotes financial system stability
+3. Supervises and regulates financial institutions
+4. Fosters a safe, efficient and accessible payments system
+5. Promotes consumer protection and community development
+
+THE FEDERAL FUNDS RATE:
+- The interest rate at which banks lend reserves to each other overnight
+- Primary tool of monetary policy
+- Affects interest rates throughout the economy (mortgage rates, savings rates, bond yields, etc.)
+- When the Fed raises rates: borrowing becomes more expensive, can slow inflation; reduces bond prices
+- When the Fed lowers rates: borrowing becomes cheaper, can stimulate economy; increases bond prices
+
+FRED (Federal Reserve Economic Data):
+- Free public database of economic time series
+- URL: fred.stlouisfed.org
+- Includes: interest rates, inflation, GDP, unemployment, stock indices, exchange rates, etc.
+- Essential reference for investment research and portfolio analysis
+
+KEY PUBLICATIONS FROM ST. LOUIS FED:
+1. Review: Scholarly research on monetary policy, macroeconomics
+2. On the Economy Blog: Insights from Fed economists
+3. FRED Blog: Data storytelling using interactive charts
+4. Open Vault Blog: Everyday economics and the Fed explained
+5. Page One Economics: Personal finance and econ basics
+
+IMPLICATIONS FOR INVESTORS:
+- Interest rate environment heavily influences asset allocation decisions
+- Rising rates → bonds decrease in value (existing bonds less attractive)
+- Rising rates → may slow stock market growth (higher discount rates reduce valuations)
+- Falling rates → bonds increase in value
+- Inflation erodes real returns on fixed-income investments
+- PCE inflation above the 2% target may signal Fed tightening to come

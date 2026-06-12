@@ -1,0 +1,33 @@
+SOURCE: SEC Investor Education — investor.gov
+URL: https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/gauge-your-risk-tolerance
+AUTHORITY: U.S. Securities and Exchange Commission (SEC)
+TOPIC: Risk Tolerance and Investment Time Horizon
+DATE_SCRAPED: 2026-05-30
+
+=== GAUGE YOUR RISK TOLERANCE ===
+
+What are the best saving and investment products for you? The answer depends on:
+1. When you will need the money (time horizon)
+2. Your goals
+3. Whether you will be able to sleep at night if you purchase a risky investment (one where you could lose your principal)
+
+LONG TIME HORIZON (35 years to retirement):
+- May want to consider riskier investment products
+- Sticking to only "savings" products or less risky investments means money may grow too slowly
+- Given inflation and taxes, may lose purchasing power of money
+- COMMON MISTAKE: Putting money you will not need for a very long time in investments that pay a low amount of interest
+
+SHORT TIME HORIZON (5 years or less):
+- Don't choose risky investments
+- When it's time to sell, you may have to take a loss if you're in volatile investments
+
+KEY PRINCIPLE: Match investment risk to time horizon and goals.
+- Short-term goals → lower-risk investments (preserve capital)
+- Long-term goals → can accept higher risk for higher potential returns
+- Consider impact of inflation on purchasing power over long periods
+
+RISK TOLERANCE DIMENSIONS:
+- Ability to take risk: Determined by time horizon, financial situation, income stability
+- Willingness to take risk: Psychological comfort with potential losses
+
+These two dimensions can diverge — someone may have a high ability but low willingness to take risk. Good financial advice addresses both.

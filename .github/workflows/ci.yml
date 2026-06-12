@@ -1,0 +1,168 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 2 * * *"
+
+env:
+  DATABASE_URL: postgresql+asyncpg://postgres:postgres@localhost:5432/financial_advisor
+  REDIS_URL: redis://localhost:6379
+  MONGODB_URL: ""
+
+jobs:
+  # ────────────────────────────────────────────────────────
+  # Job 1: Unit tests — no DB, no LLM, runs on every push
+  # ────────────────────────────────────────────────────────
+  unit-tests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Install dependencies
+        run: cd backend && uv sync
+
+      - name: Run unit tests
+        run: cd backend && uv run pytest evals/ -m unit -v --tb=short
+
+  # ────────────────────────────────────────────────────────
+  # Job 2: RAG retrieval tests — live DB, PRs + nightly
+  # ────────────────────────────────────────────────────────
+  rag-tests:
+    name: RAG retrieval tests
+    if: github.event_name == 'pull_request' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: financial_advisor
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Cache downloaded PDFs
+        uses: actions/cache@v4
+        with:
+          path: |
+            rag_knowledge_base/academic
+            rag_knowledge_base/central_bank
+            rag_knowledge_base/institutional_research
+            rag_knowledge_base/regulatory
+          key: kb-pdfs-${{ hashFiles('rag_knowledge_base/download_pdfs.py') }}
+          restore-keys: |
+            kb-pdfs-
+
+      - name: Install dependencies
+        run: cd backend && uv sync
+
+      - name: Run DB migrations
+        run: cd backend && uv run alembic upgrade head
+
+      - name: Download auto-downloadable PDFs
+        run: cd rag_knowledge_base && python download_pdfs.py
+        continue-on-error: true
+
+      - name: Seed knowledge base
+        run: cd backend && uv run python scripts/seed_kb.py
+
+      - name: Run RAG retrieval tests
+        run: cd backend && uv run pytest evals/ -m rag -v --tb=short
+
+  # ────────────────────────────────────────────────────────
+  # Job 3: LLM eval tests — nightly only, needs secrets
+  # ────────────────────────────────────────────────────────
+  llm-eval-tests:
+    name: LLM eval tests (nightly)
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: financial_advisor
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          version: "latest"
+
+      - name: Cache downloaded PDFs
+        uses: actions/cache@v4
+        with:
+          path: |
+            rag_knowledge_base/academic
+            rag_knowledge_base/central_bank
+            rag_knowledge_base/institutional_research
+            rag_knowledge_base/regulatory
+          key: kb-pdfs-${{ hashFiles('rag_knowledge_base/download_pdfs.py') }}
+          restore-keys: |
+            kb-pdfs-
+
+      - name: Install dependencies
+        run: cd backend && uv sync
+
+      - name: Run DB migrations
+        run: cd backend && uv run alembic upgrade head
+
+      - name: Download auto-downloadable PDFs
+        run: cd rag_knowledge_base && python download_pdfs.py
+        continue-on-error: true
+
+      - name: Seed knowledge base
+        run: cd backend && uv run python scripts/seed_kb.py
+
+      - name: Run LLM eval tests
+        run: cd backend && uv run pytest evals/ -m llm_eval -v --timeout=300 --tb=short
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
+          LANGFUSE_SECRET_KEY: ${{ secrets.LANGFUSE_SECRET_KEY }}
+          LANGFUSE_HOST: ${{ secrets.LANGFUSE_HOST }}

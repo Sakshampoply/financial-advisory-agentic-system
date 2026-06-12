@@ -1,0 +1,49 @@
+[
+  {
+    "description": "explicit numeric values",
+    "messages": [
+      "I have high risk tolerance",
+      "15 years",
+      "$50,000"
+    ],
+    "single_message": "High risk, 15 years, $50,000",
+    "expected_fields": {
+      "risk_tolerance": "high",
+      "investment_horizon_years": 15,
+      "investment_amount_usd": 50000
+    }
+  },
+  {
+    "description": "word-form amount",
+    "single_message": "I am comfortable with moderate risk and want to invest for 10 years with fifty thousand dollars",
+    "expected_fields": {
+      "risk_tolerance": "moderate",
+      "investment_horizon_years": 10,
+      "investment_amount_usd": 50000
+    }
+  },
+  {
+    "description": "abbreviated amount",
+    "single_message": "Low risk, short 5-year horizon, I have $200k to invest",
+    "expected_fields": {
+      "risk_tolerance": "low",
+      "investment_horizon_years": 5,
+      "investment_amount_usd": 200000
+    }
+  },
+  {
+    "description": "ticker list portfolio",
+    "single_message": "AAPL 40%, MSFT 30%, GOOGL 30%",
+    "expected_portfolio_tickers": ["AAPL", "MSFT", "GOOGL"]
+  },
+  {
+    "description": "new portfolio intent",
+    "single_message": "Build me a brand new portfolio from scratch",
+    "expected_wants_new_portfolio": true
+  },
+  {
+    "description": "ambiguous - should not call tool",
+    "single_message": "maybe moderate-ish risk, not sure about timeline",
+    "expected_no_tool_call": true
+  }
+]

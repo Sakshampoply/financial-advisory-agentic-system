@@ -1,0 +1,17 @@
+{
+  "description": "Realistic Indian + global mixed portfolio for testing",
+  "holdings": [
+    {"ticker": "RELIANCE.NS", "weight": 0.15},
+    {"ticker": "TCS.NS", "weight": 0.20},
+    {"ticker": "INFY.NS", "weight": 0.15},
+    {"ticker": "HDFCBANK.NS", "weight": 0.10},
+    {"ticker": "SPY", "weight": 0.20},
+    {"ticker": "QQQ", "weight": 0.10},
+    {"ticker": "GLD", "weight": 0.10}
+  ],
+  "profile": {
+    "risk_tolerance": "high",
+    "investment_horizon_years": 10,
+    "investment_amount_usd": 100000
+  }
+}

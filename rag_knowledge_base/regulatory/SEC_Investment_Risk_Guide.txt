@@ -1,0 +1,31 @@
+SOURCE: SEC Investor Education — investor.gov
+URL: https://www.investor.gov/introduction-investing/investing-basics/what-risk
+AUTHORITY: U.S. Securities and Exchange Commission (SEC)
+TOPIC: Investment Risk Types
+DATE_SCRAPED: 2026-05-30
+
+=== WHAT IS RISK? ===
+
+All investments involve some degree of risk. In finance, risk refers to the degree of uncertainty and/or potential financial loss inherent in an investment decision. In general, as investment risks rise, investors seek higher returns to compensate themselves for taking such risks.
+
+Every saving and investment product has different risks and returns. Differences include: how readily investors can get their money when they need it, how fast their money will grow, and how safe their money will be.
+
+BUSINESS RISK
+With a stock, you are purchasing a piece of ownership in a company. With a bond, you are loaning money to a company. Returns from both of these investments require that the company stays in business. If a company goes bankrupt and its assets are liquidated, common stockholders are the last in line to share in the proceeds. If there are assets, the company's bondholders will be paid first, then holders of preferred stock. If you are a common stockholder, you get whatever is left, which may be nothing.
+
+VOLATILITY RISK
+Even when companies aren't in danger of failing, their stock price may fluctuate up or down. Large company stocks as a group, for example, have lost money on average about one out of every three years. Market fluctuations can be unnerving to some investors. A stock's price can be affected by factors inside the company, such as a faulty product, or by events the company has no control over, such as political or market events.
+
+INFLATION RISK
+Inflation is a general upward movement of prices. Inflation reduces purchasing power, which is a risk for investors receiving a fixed rate of interest. The principal concern for individuals investing in cash equivalents is that inflation will erode returns.
+
+INTEREST RATE RISK
+Interest rate changes can affect a bond's value. If bonds are held to maturity the investor will receive the face value, plus interest. If sold before maturity, the bond may be worth more or less than the face value. Rising interest rates will make newly issued bonds more appealing to investors because the newer bonds will have a higher rate of interest than older ones. To sell an older bond with a lower interest rate, you might have to sell it at a discount.
+
+LIQUIDITY RISK
+This refers to the risk that investors won't find a market for their securities, potentially preventing them from buying or selling when they want. This can be the case with the more complicated investment products. It may also be the case with products that charge a penalty for early withdrawal or liquidation such as a certificate of deposit (CD).
+
+INSURANCE/GUARANTEES:
+- FDIC: Insures savings accounts, insured money market accounts, and CDs up to $250,000 per insured bank per depositor. Does NOT insure securities, mutual funds, or similar investments.
+- NCUA (NCUSIF): Insures credit union member deposits in federally insured credit unions up to $250,000.
+- SIPC: Non-government entity that replaces missing stocks and other securities in customer accounts held by SIPC member firms up to $500,000, including up to $250,000 in cash, if the firm fails.

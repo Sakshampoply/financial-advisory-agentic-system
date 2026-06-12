@@ -1,0 +1,56 @@
+SOURCE: SEC Investor Education — investor.gov
+URL: https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds
+AUTHORITY: U.S. Securities and Exchange Commission (SEC)
+TOPIC: Bonds — Fixed Income Products FAQ
+DATE_SCRAPED: 2026-05-30
+
+=== BONDS — FREQUENTLY ASKED QUESTIONS ===
+
+WHAT ARE BONDS?
+A bond is a debt security, like an IOU. Borrowers issue bonds to raise money from investors willing to lend them money for a certain amount of time. When you buy a bond, you are lending to the issuer, which may be a government, municipality, or corporation. In return, the issuer promises to pay you a specified rate of interest during the life of the bond and to repay the principal, also known as face value or par value of the bond, when it "matures," or comes due after a set period of time.
+
+WHY ARE BONDS BOUGHT AND SOLD?
+Investors buy bonds because:
+- They provide a predictable income stream. Typically, bonds pay interest on a regular schedule, such as every six months.
+- If the bonds are held to maturity, bondholders get back the entire principal, so bonds are a way to preserve capital while investing.
+- Bonds can help offset exposure to more volatile stock holdings.
+
+Companies, governments and municipalities issue bonds to get money for various things, which may include:
+- Providing operating cash flow
+- Financing debt
+- Funding capital investments in schools, highways, hospitals, and other projects
+
+TYPES OF BONDS:
+
+1. CORPORATE BONDS — debt securities issued by private and public corporations.
+   - Investment-grade: Higher credit rating, implying less credit risk.
+   - High-yield (junk): Lower credit rating, implying higher credit risk; offer higher interest rates in return for increased risk.
+
+2. MUNICIPAL BONDS ("munis") — debt securities issued by states, cities, counties and other government entities.
+   - General obligation bonds: Payable from the issuer's general fund or specific taxes (usually property tax).
+   - Revenue bonds: Backed by revenues from a specific project or source (highway tolls, lease fees, etc.).
+   - Conduit bonds: Governments issue on behalf of private entities (non-profit colleges, hospitals). If conduit borrower fails to pay, the issuer usually is NOT required to pay bondholders.
+
+3. U.S. TREASURIES — issued by the U.S. Department of the Treasury; carry the full faith and credit of the U.S. government.
+   - Treasury Bills: Short-term securities maturing in a few days to 52 weeks
+   - Notes: Longer-term securities maturing within ten years
+   - Bonds: Long-term securities that typically mature in 30 years; pay interest every six months
+   - TIPS: Treasury Inflation-Protected Securities — principal is adjusted based on changes in the Consumer Price Index; issued with maturities of 5, 10, and 30 years.
+
+BENEFITS AND RISKS OF BONDS:
+
+Benefits:
+- Predictable income stream from regular interest payments
+- Capital preservation (full principal returned at maturity)
+- Offset exposure to more volatile stock holdings
+- Interest from municipal bonds generally exempt from federal income tax and possibly state/local taxes
+
+Risks:
+- Credit risk: Issuer may fail to make interest or principal payments (default)
+- Interest rate risk: Rising rates make existing bonds less attractive; if sold before maturity, may be worth less than face value
+- Inflation risk: Inflation reduces purchasing power; especially harmful to fixed-rate bonds
+- Liquidity risk: May not find a market for the bond when wanting to sell
+- Call risk: Issuer may retire bond before maturity date (usually when interest rates decline)
+
+KEY CONCEPT — INTEREST RATE RISK:
+Rising interest rates will make newly issued bonds more appealing to investors because the newer bonds will have a higher rate of interest than older ones. To sell an older bond with a lower interest rate, you might have to sell it at a discount.

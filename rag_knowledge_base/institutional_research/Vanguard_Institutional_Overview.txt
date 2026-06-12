@@ -1,0 +1,53 @@
+SOURCE: Vanguard Institutional / Workplace Solutions
+URL: https://institutional.vanguard.com/insights (redirects to workplace.vanguard.com)
+AUTHORITY: Vanguard Group (World's Largest Mutual Fund Company)
+TOPIC: Institutional Investment Philosophy, Target Date Funds, Retirement Plans
+DATE_SCRAPED: 2026-05-30
+
+=== VANGUARD INSTITUTIONAL — INVESTMENT PHILOSOPHY & RESOURCES ===
+
+VANGUARD CORE PRINCIPLES (from CEO letter):
+- Emphasis on low-cost, long-term investing
+- Focus on investor outcomes, not short-term performance
+- Diversification across asset classes
+
+KEY PRODUCTS:
+1. Mutual Funds, Trusts, and ETFs
+2. Target Date Funds (TDFs)
+3. Defined Contribution (DC) Plans / 401(k)
+4. Nonprofit investing
+5. Corporate accounts
+
+TARGET DATE FUND PHILOSOPHY:
+- Gradually shifts emphasis from more aggressive to more conservative investments as target date approaches
+- Year in fund name = approximate retirement date
+- Income Trust/Fund and Income and Growth Trust have fixed allocations for already-retired investors
+- NOT guaranteed at any time, including on or after the target date
+
+VANGUARD'S INVESTING PRINCIPLES (Principles for Investing Success):
+1. Goals — Create clear, appropriate investment goals
+2. Balance — Develop a suitable asset allocation using diversified funds
+3. Cost — Minimize cost (expense ratios matter enormously over time)
+4. Discipline — Maintain perspective and long-term discipline
+
+VANGUARD ON ASSET ALLOCATION:
+- Asset allocation is the primary driver of portfolio return variability
+- Should reflect investor's time horizon, risk tolerance, and financial situation
+- Younger investors: can afford more equity exposure due to longer recovery time
+- Older investors: shift toward more conservative/income-oriented allocations
+
+VANGUARD ON COSTS:
+- Every dollar paid in fees is a dollar not compounding for the investor
+- Low-cost index funds typically outperform most actively managed funds over long periods
+- Expense ratios, transaction costs, and tax efficiency all matter
+
+VANGUARD ON DISCIPLINE (Behavioral Coaching):
+- Behavioral biases (e.g., panic selling, performance chasing) destroy wealth
+- "Advisor's Alpha" research: up to ~1.5% annual value from behavioral coaching alone
+- Staying invested during market downturns is essential to capturing long-term returns
+
+FOR RAG SYSTEM - IMPORTANT VANGUARD DOCUMENTS TO DOWNLOAD MANUALLY:
+1. "Principles for Investing Success" — https://institutional.vanguard.com/content/dam/inst/vanguard-has/insights/pdf/principles-for-investing-success.pdf
+2. "Advisor's Alpha" — https://advisors.vanguard.com/advisors-alpha
+3. "The Case for Low-Cost Index-Fund Investing" — available at institutional.vanguard.com
+4. Annual Economic and Market Outlook — available at institutional.vanguard.com

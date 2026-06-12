@@ -1,0 +1,42 @@
+SOURCE: SEC Investor Education — investor.gov
+URL: https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds-etfs/mutual-funds
+AUTHORITY: U.S. Securities and Exchange Commission (SEC)
+TOPIC: Mutual Funds — Complete Guide
+DATE_SCRAPED: 2026-05-30
+
+=== MUTUAL FUNDS ===
+
+WHAT ARE MUTUAL FUNDS?
+A mutual fund is an SEC-registered open-end investment company that pools money from many investors. It invests the money in stocks, bonds, short-term money-market instruments, other securities or assets, or some combination of these investments. The combined holdings the mutual fund owns are known as its portfolio, which is managed by an SEC-registered investment adviser. Each mutual fund share represents an investor's part ownership of the mutual fund's portfolio and the gains and losses the portfolio generates.
+
+WHY DO PEOPLE BUY MUTUAL FUNDS?
+- Professional Management: Managed by SEC-registered investment advisers.
+- Diversification: May invest in a range of companies and industries, lowering risk.
+- Low Minimum Investment: Many mutual funds set a relatively low dollar amount for initial investment.
+- Liquidity: Investors can readily sell shares back to the fund at the next calculated NAV on any business day minus any redemption fees.
+
+HOW DO INVESTORS EARN MONEY FROM MUTUAL FUNDS?
+1. Dividend Payments: The fund earns income (dividends on stock, interest on bonds) and pays shareholders nearly all of it, less expenses.
+2. Capital Gains Distributions: When a fund sells a security that has increased in price, it distributes these capital gains (minus losses) to investors at year end.
+3. Increased Net Asset Value (NAV): If the market value of a fund's portfolio increases (after deducting expenses and liabilities), the NAV and share price increases.
+
+RISKS OF MUTUAL FUNDS
+Mutual funds are NOT guaranteed or insured by the FDIC or any other government agency. You may lose some or all of the money you invest. A fund's past performance does not predict future returns but can indicate volatility. Higher potential return generally means higher risk of loss.
+
+TYPES OF MUTUAL FUNDS
+- Stock funds: Invest primarily in stocks/equities. Can rise and fall quickly.
+- Bond/income funds: Invest primarily in bonds or debt securities.
+- Target date funds: Hold a mix of stock funds, bond funds and other funds; designed for individuals with a particular retirement date. Mix becomes more conservative as target date approaches.
+- Money market funds: Invest in liquid, short-term debt securities, cash and cash equivalents.
+
+INVESTING STRATEGIES
+- Index Funds (Passive): Designed to achieve approximately the same return as a particular index before fees. Usually translates into less trading, lower costs, more favorable tax consequences.
+- Actively Managed Funds: Seek to achieve stated investment objective by investing in a portfolio of stocks, bonds, and other assets. Potential to outperform market but heavily dependent on manager skill.
+
+WHAT DO YOU PAY?
+Funds pass costs to investors by deducting fees and expenses from NAV. Even small differences in fees can mean large differences in returns over time. A fund with high costs must perform better than a low-cost fund to generate the same returns.
+
+KEY CONSIDERATIONS BEFORE INVESTING
+- Read the fund's prospectus and most recent shareholder report
+- Consider whether the fund fits your overall financial situation
+- Ask about where your money is going, who is managing it, and how to get it back

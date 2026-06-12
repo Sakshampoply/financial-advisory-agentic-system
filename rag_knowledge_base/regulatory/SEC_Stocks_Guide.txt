@@ -1,0 +1,61 @@
+SOURCE: SEC Investor Education — investor.gov
+URL: https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks
+AUTHORITY: U.S. Securities and Exchange Commission (SEC)
+TOPIC: Stocks — Equities FAQ
+DATE_SCRAPED: 2026-05-30
+
+=== STOCKS — FREQUENTLY ASKED QUESTIONS ===
+
+WHAT ARE STOCKS?
+Stocks are a type of security that gives stockholders a share of ownership in a company. Also called "equities."
+
+Investors buy stocks for:
+- Capital appreciation (when a stock rises in price)
+- Dividend payments (when the company distributes some of its earnings)
+- Ability to vote shares and influence the company
+
+Companies issue stock to raise money for:
+- Paying off debt
+- Launching new products
+- Expanding into new markets or regions
+- Enlarging facilities or building new ones
+
+TYPES OF STOCKS:
+
+Common stock: Entitles owners to vote at shareholder meetings and receive dividends.
+Preferred stock: Usually no voting rights but receives dividend payments before common stockholders; has priority over common stockholders if company goes bankrupt.
+
+Additional categories:
+- Growth stocks: Earnings growing faster than market average; rarely pay dividends; investors buy in hope of capital appreciation. (e.g., start-up tech companies)
+- Income stocks: Pay dividends consistently; investors buy for income they generate. (e.g., established utility companies)
+- Value stocks: Low price-to-earnings (PE) ratio; cheaper to buy than stocks with higher PE; may have fallen out of favor; investors hope the market has overreacted and price will rebound.
+- Blue-chip stocks: Shares in large, well-known companies with solid history of growth; generally pay dividends.
+
+By company size (market capitalization): Large-cap, mid-cap, small-cap, microcap, penny stocks.
+- Penny stocks: Very lowest priced; little or no earnings; no dividends; highly speculative.
+
+BENEFITS AND RISKS OF STOCKS:
+
+Benefits:
+- Greatest potential for growth (capital appreciation) over long haul
+- Investors who stick with stocks over 15+ years generally have been rewarded with strong, positive returns
+- Dividends provide income
+
+Risks:
+- Stock prices move down as well as up
+- No guarantee company will grow and do well; can lose money invested
+- If company goes bankrupt: common stockholders are LAST in line to receive proceeds (behind bondholders and preferred stockholders)
+- Volatility: Large company stocks have lost money on average about one out of every three years
+- Factors inside and outside the company can affect stock price
+
+RISK MANAGEMENT:
+- Offset risks by investing in a number of different stocks (diversification)
+- Offset risks by investing in other assets that are not stocks (e.g., bonds)
+- Long time horizon allows more ability to weather volatility
+- Young investors saving for retirement may want more stocks than bonds; investors nearing retirement may want more bonds than stocks
+
+STOCK CATEGORIES BY INVESTMENT STRATEGY:
+- Direct stock plans (buy directly from company)
+- Dividend reinvestment plans
+- Discount or full-service broker
+- Stock funds (mutual funds investing primarily in stocks)

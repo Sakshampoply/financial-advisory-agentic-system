@@ -1,0 +1,69 @@
+SOURCE: FINRA Investor Education — finra.org/investors
+URL: https://www.finra.org/investors/investing/investment-strategies
+AUTHORITY: Financial Industry Regulatory Authority (FINRA)
+TOPIC: Investment Strategies
+DATE_SCRAPED: 2026-05-30
+
+=== INVESTMENT STRATEGIES ===
+
+Suitable investment strategies can vary from person to person based upon:
+- Age
+- Income
+- Assets
+- Risk tolerance
+- Family obligations
+- Lifestyle and other factors
+
+Don't think of an investment strategy as "good" or "bad." The key is to determine whether it's the right strategy to help you accomplish your goals while also incorporating principles of asset allocation and diversification.
+
+Investment strategies can be simple, such as:
+- Putting a set percentage of your funds in diversified stock mutual funds and the rest in bond funds.
+
+Or they can be more complex, such as:
+- An active strategy that attempts to increase returns by exploiting popular investment themes and making frequent trades
+- A strategy that leans heavily on non-traditional (or "alternative") investments such as real estate, precious metals or crypto assets
+
+A well thought out strategy should plan not just for your current nest egg but also how best to put savings from future earnings to work (e.g., regular payroll deductions into a 401(k) plan).
+
+Your preferred investment strategy will likely evolve over time as your circumstances, goals and obligations change. For example, a young, single person might be more open to an aggressive strategy that involves greater risk than someone nearing retirement.
+
+KEY INVESTMENT STRATEGIES:
+1. Active vs. Passive Investing
+   - Active: Frequent trades, attempts to outperform market
+   - Passive: Index funds, track market performance, lower costs
+
+2. Dollar-Cost Averaging
+   - Investing fixed amounts at regular intervals
+   - Reduces impact of market timing and volatility
+
+3. Market Timing
+   - Attempts to predict market movements
+   - Very difficult to execute consistently; high risk
+
+4. Value Investing
+   - Buying undervalued securities relative to intrinsic value
+   - Popularized by Warren Buffett / Benjamin Graham
+
+5. Momentum Investing
+   - Buying securities that have shown upward price trends
+   - Following market momentum
+
+6. Micro-Investing
+   - Investing small amounts regularly, often through apps
+
+7. Direct Indexing
+   - Owning individual securities replicating an index directly
+   - Allows tax-loss harvesting at the individual security level
+
+INVESTMENT PRODUCTS COVERED BY FINRA:
+- Alternative and Emerging Products
+- Annuities
+- Bank Products
+- Bonds
+- Crypto Assets
+- Exchange-Traded Funds and Products
+- Futures and Commodities
+- Insurance
+- Mutual Funds
+- Options
+- Stocks
