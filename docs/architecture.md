@@ -28,24 +28,48 @@ The framework for the graph is compiled once at application startup and stored o
 
 ## 2. Graph Topology
 
-```
-                    ┌─────────────────────────────────────────────────────┐
-                    │                                                       │
-  User message ──► guardrail_input ──► intent_classifier ──► supervisor ──┤
-                         │                                        ▲        │
-                         │ (injection detected)                   │        ├──► intake ──────────────────┐
-                         ▼                                        │        │                              │
-                   error_handler ──► END                          │        ├──► document_intelligence ───┤
-                                                                  │        │                              │
-                                                         (all nodes         ├──► profile_builder ─────────┤
-                                                          route back        │                              │
-                                                          to supervisor)    ├──► risk_assessment ──────────┤
-                                                                  │        │                              │
-                                                                  │        ├──► strategy ─────────────────┤
-                                                                  │        │                              │
-                                                                  └────────┤──► scoring ──────────────────┤
-                                                                           │                              │
-                                                                           └──► advisor_copilot ──► guardrail_output ──► END
+```mermaid
+flowchart TD
+    MSG([💬 User Message]) --> GI[guardrail_input]
+
+    GI -->|safe| IC[intent_classifier]
+    GI -->|injection detected| EH[error_handler]
+
+    IC --> SV{supervisor}
+
+    SV -->|documents pending| DI[document_intelligence]
+    SV -->|no portfolio| PB[profile_builder]
+    SV -->|needs profile| IN[intake]
+    SV -->|needs risk| RA[risk_assessment]
+    SV -->|needs strategy| ST[strategy]
+    SV -->|needs score| SC[scoring]
+    SV -->|ready to advise| AC[advisor_copilot]
+    SV -->|awaiting user| DONE([END])
+
+    DI --> SV
+    PB --> SV
+    IN --> SV
+    RA --> SV
+    ST --> SV
+    SC --> SV
+
+    AC --> GO[guardrail_output]
+    GO --> DONE
+    EH --> DONE
+
+    classDef guard    fill:#f59e0b,stroke:#d97706,color:#000
+    classDef router   fill:#8b5cf6,stroke:#7c3aed,color:#fff
+    classDef pipeline fill:#10b981,stroke:#059669,color:#fff
+    classDef advisor  fill:#3b82f6,stroke:#2563eb,color:#fff
+    classDef terminal fill:#374151,stroke:#1f2937,color:#fff
+    classDef entry    fill:#ec4899,stroke:#db2777,color:#fff
+
+    class GI,GO guard
+    class IC,SV router
+    class IN,DI,PB,RA,ST,SC pipeline
+    class AC advisor
+    class EH,DONE terminal
+    class MSG entry
 ```
 
 **Entry sequence**: Every message enters at `guardrail_input`, passes through `intent_classifier`, then reaches `supervisor` which performs all routing decisions.

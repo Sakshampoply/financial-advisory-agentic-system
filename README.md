@@ -4,13 +4,21 @@ A production-grade multi-agent LLM system for personalized financial advisory. U
 
 ---
 
+<div align="center">
+
+| [📦 Setup](docs/setup.md) | [🏗 Architecture](docs/architecture.md) | [🤖 Agents](docs/agents.md) | [🔍 RAG](docs/rag.md) | [📊 Evals](docs/evals.md) | [🔭 Observability](docs/observability.md) | [📈 Market Data](docs/market-data.md) | [🔌 API](docs/api.md) | [🖥 Frontend](docs/frontend.md) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+
+</div>
+
+---
+
 ## Table of Contents
 
 - [Features](#features)
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
 - [Quick Start](#quick-start)
-- [Documentation](#documentation)
 - [Environment Variables](#environment-variables)
 
 ---
@@ -31,15 +39,48 @@ A production-grade multi-agent LLM system for personalized financial advisory. U
 
 ## Architecture
 
-```
-guardrail_input ──► intent_classifier ──► supervisor ──► intake
-       │                                       │────────► document_intelligence
-       │                                       │────────► profile_builder
-       ▼                                       │────────► risk_assessment
-  error_handler                                │────────► strategy
-       │                                       │────────► scoring
-       ▼                                       └────────► advisor_copilot ──► guardrail_output ──► END
-      END
+```mermaid
+flowchart TD
+    MSG([💬 User Message]) --> GI[guardrail_input]
+
+    GI -->|safe| IC[intent_classifier]
+    GI -->|injection detected| EH[error_handler]
+
+    IC --> SV{supervisor}
+
+    SV -->|documents pending| DI[document_intelligence]
+    SV -->|no portfolio| PB[profile_builder]
+    SV -->|needs profile| IN[intake]
+    SV -->|needs risk| RA[risk_assessment]
+    SV -->|needs strategy| ST[strategy]
+    SV -->|needs score| SC[scoring]
+    SV -->|ready to advise| AC[advisor_copilot]
+    SV -->|awaiting user| DONE([END])
+
+    DI --> SV
+    PB --> SV
+    IN --> SV
+    RA --> SV
+    ST --> SV
+    SC --> SV
+
+    AC --> GO[guardrail_output]
+    GO --> DONE
+    EH --> DONE
+
+    classDef guard   fill:#f59e0b,stroke:#d97706,color:#000
+    classDef router  fill:#8b5cf6,stroke:#7c3aed,color:#fff
+    classDef pipeline fill:#10b981,stroke:#059669,color:#fff
+    classDef advisor fill:#3b82f6,stroke:#2563eb,color:#fff
+    classDef terminal fill:#374151,stroke:#1f2937,color:#fff
+    classDef entry   fill:#ec4899,stroke:#db2777,color:#fff
+
+    class GI,GO guard
+    class IC,SV router
+    class IN,DI,PB,RA,ST,SC pipeline
+    class AC advisor
+    class EH,DONE terminal
+    class MSG entry
 ```
 
 The graph is a LangGraph `StateGraph` with PostgreSQL checkpointing. Every message is persisted so sessions resume exactly where they left off across browser refreshes and reconnects.
@@ -97,23 +138,7 @@ uv run uvicorn app.main:app --reload    # http://localhost:8000
 cd frontend && npm install && npm run dev   # http://localhost:3000
 ```
 
-See **[docs/setup.md](docs/setup.md)** for the complete guide including API key acquisition and test commands.
-
----
-
-## Documentation
-
-| Document | What It Covers |
-|----------|---------------|
-| [Setup Guide](docs/setup.md) | Docker services, migrations, knowledge base seeding, API keys, running tests |
-| [Architecture](docs/architecture.md) | LangGraph graph topology, GraphState schema, supervisor routing logic, session persistence, SSE streaming phases |
-| [Agents](docs/agents.md) | All 12 agents — purpose, trigger condition, implementation details, quantitative formulas, state inputs/outputs |
-| [RAG System](docs/rag.md) | Knowledge base structure, chunking strategy (512w/64w), hybrid retrieval, RRF algorithm, session-specific documents |
-| [Evaluations](docs/evals.md) | 4-tier eval pyramid, every evaluator explained, Langfuse score submission, CI pipeline |
-| [Observability](docs/observability.md) | Langfuse setup, `@traced_node` decorator, LangChain callback integration, span metadata |
-| [Market Data](docs/market-data.md) | yfinance, Alpha Vantage, FRED clients; Redis cache key scheme and TTLs; fallback behavior |
-| [API Reference](docs/api.md) | FastAPI endpoints, SSE event protocol, document upload flow |
-| [Frontend](docs/frontend.md) | Next.js app structure, custom hooks, SSE CRLF parsing, rolling-placeholder pattern, MarkdownRenderer |
+See **[📦 Setup](docs/setup.md)** for the complete guide including API key acquisition and test commands.
 
 ---
 
