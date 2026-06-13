@@ -11,7 +11,9 @@ async def profile_builder_node(state: GraphState) -> dict:
     holdings_by_ticker: dict[str, float] = {}
     total_account_value: float | None = None
 
-    async for record in mongo["extracted_document_data"].find({"session_id": session_id}):
+    async for record in mongo["extracted_document_data"].find(
+        {"session_id": session_id}
+    ):
         extraction = record.get("extraction") or {}
 
         acct_val = extraction.get("account_value")
@@ -24,7 +26,9 @@ async def profile_builder_node(state: GraphState) -> dict:
             ticker = (holding.get("ticker") or "").upper().strip()
             value = holding.get("value") or 0
             if ticker and float(value) > 0:
-                holdings_by_ticker[ticker] = holdings_by_ticker.get(ticker, 0.0) + float(value)
+                holdings_by_ticker[ticker] = holdings_by_ticker.get(
+                    ticker, 0.0
+                ) + float(value)
 
     # Build normalised portfolio weights
     portfolio: dict[str, float] = {}
@@ -45,9 +49,8 @@ async def profile_builder_node(state: GraphState) -> dict:
     # profile_builder just filled in the portfolio from documents, the profile is now
     # complete — set the flag so supervisor can proceed past the intake gate.
     if (
-        profile.get("risk_tolerance") and
-        profile.get("investment_horizon_years") and
-        profile.get("investment_amount_usd")
+        profile.get("risk_tolerance")
+        and profile.get("investment_horizon_years")
+        and profile.get("investment_amount_usd")
     ):
         result["intake_complete"] = True
-    return result
