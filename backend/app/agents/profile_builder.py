@@ -54,3 +54,4 @@ async def profile_builder_node(state: GraphState) -> dict:
         and profile.get("investment_amount_usd")
     ):
         result["intake_complete"] = True
+    return result

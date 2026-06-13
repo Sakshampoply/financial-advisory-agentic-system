@@ -8,9 +8,12 @@ on:
     - cron: "0 2 * * *"
 
 env:
-  DATABASE_URL: postgresql+asyncpg://postgres:postgres@localhost:5432/financial_advisor
-  REDIS_URL: redis://localhost:6379
-  MONGODB_URL: ""
+  # config.py builds DATABASE_URL from these parts (@computed_field — direct DATABASE_URL env var is ignored)
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: localhost
+  POSTGRES_PORT: 5432
+  POSTGRES_DB: financial_advisor
 
 jobs:
   # ────────────────────────────────────────────────────────
