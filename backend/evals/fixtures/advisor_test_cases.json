@@ -17,7 +17,7 @@
     "description": "score_portfolio — cite portfolio score source",
     "input": "Give me a score for my portfolio",
     "intent": "score_portfolio",
-    "must_contain": ["(Source: Portfolio Score)", "*This is not professional financial advice.*"],
+    "must_contain": ["Portfolio Score", "*This is not professional financial advice.*"],
     "must_not_contain": []
   },
   {

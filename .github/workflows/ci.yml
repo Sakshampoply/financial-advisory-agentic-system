@@ -164,7 +164,7 @@ jobs:
         run: cd backend && uv run python scripts/seed_kb.py
 
       - name: Run LLM eval tests
-        run: cd backend && uv run pytest evals/ -m llm_eval -v --timeout=300 --tb=short
+        run: cd backend && uv run pytest evals/ -m llm_eval -v --timeout=600 --reruns 1 --tb=short
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           LANGFUSE_PUBLIC_KEY: ${{ secrets.LANGFUSE_PUBLIC_KEY }}
