@@ -20,7 +20,7 @@ Examples: "How risky is my portfolio?", "What's my volatility?", "Show me my ris
 "score_portfolio" — wants a numeric score, grade, or rating of their current portfolio quality.
 Examples: "Score my portfolio", "Rate my allocation", "How well am I doing?",
           "Grade my portfolio", "What's my portfolio score?", "How good is my portfolio?",
-          "Give me a rating out of 100"
+          "Give me a rating out of 100", "Can you score and grade my portfolio out of 100?"
 
 "full_analysis" — wants a complete investment plan, optimization, rebalancing recommendation,
 or comprehensive advice. This is the default for any personalized advice not covered above.

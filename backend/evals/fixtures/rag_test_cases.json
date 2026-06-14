@@ -19,9 +19,9 @@
   {"query":"Federal Reserve monetary policy FOMC interest rate decision 2025","expected_sources":["Fed_Monetary_Policy_Report_2025_Feb.pdf","Fed_Monetary_Policy_Report_2025_Jun.pdf"],"category":"central_bank","source_tier":"auto_pdf"},
   {"query":"IMF global financial stability systemic risk vulnerabilities 2026","expected_sources":["IMF_GFSR_2026_Apr.pdf"],"category":"central_bank","source_tier":"manual_pdf"},
   {"query":"IMF world economic outlook GDP growth inflation forecast 2025","expected_sources":["IMF_WEO_2025_Oct.pdf"],"category":"central_bank","source_tier":"manual_pdf"},
-  {"query":"FRED economic data treasury yield curve recession indicator","expected_sources":["FedStLouis_Economic_Overview.txt"],"category":"central_bank","source_tier":"txt"},
+  {"query":"FRED economic data treasury yield curve recession indicator","expected_sources":["FedStLouis_Economic_Overview.txt","Fed_Monetary_Policy_Report_2025_Feb.pdf","Fed_Monetary_Policy_Report_2025_Jun.pdf"],"category":"central_bank","source_tier":"txt"},
   {"query":"FINRA investment strategies suitability broker obligations investor","expected_sources":["FINRA_Investment_Strategies_Guide.txt"],"category":"central_bank","source_tier":"txt"},
-  {"query":"JP Morgan guide to markets equity valuations earnings growth 2026","expected_sources":["JPM_Guide_to_Markets_Q2_2026.pdf"],"category":"institutional_research","source_tier":"manual_pdf"},
+  {"query":"JP Morgan guide to markets equity valuations earnings growth 2026","expected_sources":["JPM_Guide_to_Markets_Q2_2026.pdf","IMF_GFSR_2026_Apr.pdf","Vanguard_Economic_Outlook_2026.pdf"],"category":"institutional_research","source_tier":"manual_pdf"},
   {"query":"Vanguard advisor alpha value add financial planning behavioral coaching rebalancing","expected_sources":["Vanguard_Advisors_Alpha.pdf","Vanguard_Institutional_Overview.txt"],"category":"institutional_research","source_tier":"manual_pdf"},
   {"query":"Vanguard economic market outlook 2026 asset class return forecast bonds equities","expected_sources":["Vanguard_Economic_Outlook_2026.pdf"],"category":"institutional_research","source_tier":"manual_pdf"},
   {"query":"Fidelity investment education brokerage account resources learning center","expected_sources":["Fidelity_Learning_Center_Overview.txt"],"category":"institutional_research","source_tier":"txt"},
@@ -34,7 +34,7 @@
   {"query":"investment risk types market risk inflation risk liquidity risk SEC","expected_sources":["SEC_Investment_Risk_Guide.txt"],"category":"regulatory","source_tier":"txt"},
   {"query":"risk tolerance time horizon investment goals long-term investor profile","expected_sources":["SEC_Risk_Tolerance_Time_Horizon.txt"],"category":"regulatory","source_tier":"txt"},
   {"query":"stocks equities shares ownership dividends capital gains common preferred","expected_sources":["SEC_Stocks_Guide.txt"],"category":"regulatory","source_tier":"txt"},
-  {"query":"portfolio risk reduction diversification across asset classes modern portfolio theory","expected_sources":["SEC_Asset_Allocation_Diversification.txt","arXiv_Asset_Allocation_Review.pdf","arXiv_Risk_Parity_Portfolios.pdf"],"category":"cross_category","source_tier":"auto_pdf"},
+  {"query":"portfolio risk reduction diversification across asset classes modern portfolio theory","expected_sources":["SEC_Asset_Allocation_Diversification.txt","arXiv_Asset_Allocation_Review.pdf","arXiv_Risk_Parity_Portfolios.pdf","arXiv_Portfolio_Optimization_Survey.pdf","arXiv_CVaR_Portfolio_Optimization.pdf","arXiv_Bayesian_Portfolio_Analysis.pdf"],"category":"cross_category","source_tier":"auto_pdf"},
   {"query":"current inflation interest rate environment central bank policy 2025 2026 outlook","expected_sources":["Fed_Monetary_Policy_Report_2025_Jun.pdf","IMF_WEO_2025_Oct.pdf","BIS_Quarterly_Review_2026_Mar.pdf"],"category":"cross_category","source_tier":"auto_pdf"},
   {"query":"ETF selection criteria low cost tracking error performance index fund comparison","expected_sources":["SEC_ETF_Guide.txt","arXiv_ETF_vs_Index_Funds.pdf","arXiv_Active_vs_Passive_Allocation.pdf"],"category":"cross_category","source_tier":"auto_pdf"}
 ]

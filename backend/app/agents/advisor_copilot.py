@@ -154,8 +154,7 @@ async def advisor_copilot_node(state: GraphState) -> dict:
         system_content = (
             "You are a financial advisor assistant. Answer the user's question "
             "using ONLY the Knowledge Base excerpts provided. "
-            "If the question requires personal data you don't have, explain what would be needed. "
-            "End with: '*This is not professional financial advice.*'"
+            "If the question requires personal data you don't have, explain what would be needed."
             + rag_block
         )
     elif intent == "risk_analysis":
@@ -164,8 +163,7 @@ async def advisor_copilot_node(state: GraphState) -> dict:
             "You have analyzed the user's portfolio risk profile. "
             "Present the risk metrics (Sharpe ratio, volatility, max drawdown) and risk flags clearly, "
             "grounding your interpretation in the Knowledge Base excerpts. "
-            "Give actionable guidance on improving risk management. "
-            "End with: '*This is not professional financial advice.*'\n\n"
+            "Give actionable guidance on improving risk management.\n\n"
             f"Analysis context:\n{context}"
             + rag_block
         )
@@ -175,8 +173,7 @@ async def advisor_copilot_node(state: GraphState) -> dict:
             "You have scored the user's portfolio on a 0–100 composite scale. "
             "Present the overall score and each sub-score (Sharpe, drawdown, diversification) "
             "with interpretation grounded in the Knowledge Base excerpts. "
-            "Suggest concrete steps to improve the score. "
-            "End with: '*This is not professional financial advice.*'\n\n"
+            "Suggest concrete steps to improve the score.\n\n"
             f"Analysis context:\n{context}"
             + rag_block
         )
@@ -185,8 +182,7 @@ async def advisor_copilot_node(state: GraphState) -> dict:
             "You are a financial advisor assistant. "
             "You have completed a full quantitative analysis of the user's portfolio. "
             "Answer the user's question using the analysis context and Knowledge Base excerpts ONLY. "
-            "Be specific, reference the numbers, and give actionable recommendations. "
-            "End with: '*This is not professional financial advice.*'\n\n"
+            "Be specific, reference the numbers, and give actionable recommendations.\n\n"
             f"Analysis context:\n{context}"
             + rag_block
         )
@@ -195,7 +191,10 @@ async def advisor_copilot_node(state: GraphState) -> dict:
     messages = [SystemMessage(content=system_content)] + list(state.get("messages") or [])
     response = await llm.ainvoke(messages)
 
+    _DISCLAIMER = "\n\n*This is not professional financial advice.*"
     content = response.content + no_kb_suffix
+    if _DISCLAIMER.strip() not in content:
+        content += _DISCLAIMER
     return {
         "messages": [AIMessage(content=content, name="advisor_copilot")],
         "advisor_report_generated": True,
